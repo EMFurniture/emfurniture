@@ -7,26 +7,44 @@
             </a>
         </li>
 
-      
+        {{-- <li class="nav-item nav-category">Products</li> --}}
 
-        {{-- <li class="nav-item nav-category">Blotter Record</li>
+        {{-- Product  --}}
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#blotter" aria-expanded="false" aria-controls="blotter">
+            <a class="nav-link" data-bs-toggle="collapse" href="#product" aria-expanded="false" aria-controls="product">
                 <i class="menu-icon mdi mdi-folder-outline"></i>
-                <span class="menu-title">Category</span>
+                <span class="menu-title">Product</span>
                 <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="blotter">
+            <div class="collapse" id="product">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item"><a class="nav-link" href="{{ route('blotters.index') }}">Blotter
+                    <li class="nav-item"><a class="nav-link" href="{{ route('categories.index') }}">Categories
                         </a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('people.index') }}">Person
-                        </a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('products.index') }}">Products
+                    </a>
+                </li>
                 </ul>
             </div>
-        </li> --}}
+        </li>
+
+        {{-- Supplier  --}}
+        <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#supplier" aria-expanded="false" aria-controls="supplier">
+            <i class="menu-icon mdi mdi-folder-outline"></i>
+            <span class="menu-title">Supplier</span>
+            <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" id="supplier">
+            <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="{{ route('suppliers.index') }}">Suppliers
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </li>
+
+
 
         <li class="nav-item nav-category">Account Center</li>
         <li class="nav-item">

@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CartController;
 use App\Http\Middleware\AdminMiddleware;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\SupplierController;
+use App\Http\Controllers\Admin\AdminProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,4 +37,8 @@ Route::get('/remove-from-cart/{id}', [CartController::class, 'removeFromCart'])-
 
 Route::middleware(['auth', 'isAdmin'])->prefix('admin')->group(function () {
     Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
+    Route::resource("categories", CategoryController::class)->except("show");
+    Route::resource("suppliers", SupplierController::class)->except("show");
+    Route::resource("products", AdminProductController::class)->except("show");
+
 });

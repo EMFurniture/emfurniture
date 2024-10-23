@@ -21,6 +21,8 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -100,16 +102,34 @@
             @yield('content')
         </main>
     </div>
-
-    {{-- swallalert message --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     @if (session('success'))
+    <script>
+        toastr.success("{{ session('success') }}")
+    </script>
+    @elseif (session('info'))
+    <script>
+        toastr.info("{{ session('info') }}")
+    </script>
+    @elseif (session('danger'))
+    <script>
+        toastr.error("{{ session('danger') }}")
+    </script>
+    @elseif (session('warning'))
+    <script>
+        toastr.warning("{{ session('warning') }}")
+    </script>
+  @endif
+    {{-- swallalert message --}}
+    {{-- @if (session('success'))
     <script>
         swal({
                 title: "{{ session('success') }}", 
                 icon: 'success'
             });
     </script>
-    @endif
+    @endif --}}
 
 </body>
 </html>

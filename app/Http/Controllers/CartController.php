@@ -54,7 +54,7 @@ class CartController extends Controller
              session()->put('cart', $cart);
          }
  
-         return redirect()->route('cart.index')->with('success', 'Product removed from cart.');
+         return redirect()->route('cart.index')->with('danger', 'Product removed from cart.');
      }
  
      // Update the quantity of a product in the cart
@@ -67,6 +67,6 @@ class CartController extends Controller
              session()->put('cart', $cart);
          }
  
-         return redirect()->route('cart.index')->with('success', 'Cart updated!');
+         return redirect()->route('cart.index')->with('info', 'Cart updated!');
      }
 }
