@@ -1,4 +1,8 @@
 body {
+
+}
+
+.wrapper {
     background-color: #E1F4D5 !important;
     display: flex;
     align-items: center;
@@ -6,9 +10,10 @@ body {
     justify-content: center;
     padding: 10px 0;
     font-weight: bold !important;
+    flex-direction: column;
 }
 
-.wrapper {
+.sub-wrapper {
     display: flex;
     flex-direction: column;
     width: 1200px;
@@ -109,6 +114,7 @@ input {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin-bottom: 50px;
 }
 
 .product-quality-container {
@@ -178,4 +184,97 @@ input {
 .cfc-description {
     padding: 20px;
     color: #FFFFFF;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.customize-btn {
+    padding: 20px 40px;
+    background-color: #24705E;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+}
+
+/* Footer CSS */
+
+.footer-container {
+    background-color: #000000;
+    width: 100%;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFF;
+}
+
+.em-contact-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dc-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.dc-container > img {
+    height: 20px;
+}
+
+.dc-container > p {
+    margin-bottom: 0;
+}
+
+.footer-wrapper {
+    width: 1200px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direct-social {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.ds-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.direct-contact {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.copyright > hr {
+    border-top: 1px solid #FFFFFF !important;
+    width: 100%;
 }

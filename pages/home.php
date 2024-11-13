@@ -31,6 +31,9 @@
             <span>
             Create the perfect piece that fits your style and space. Use our customization options to personalize your furniture and make it uniquely yours.
             </span>
+            <div class="customize-btn">
+                <span>Click here to Customize your order</span>
+            </div>
         </div>
     </div>
 </div>

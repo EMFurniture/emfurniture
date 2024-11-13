@@ -11,11 +11,13 @@
 <body>
   <?php //include 'conn/conn.php'; ?>
   <div class="wrapper">
-    <main></main>
-    <navigation></navigation>
-
+    <div class="sub-wrapper">
+      <main></main>
+      <navigation></navigation>
+    </div>
   </div>
-
+  <footer></footer>
+  
   <!-- Dependencies -->
   <script src="js/app.js"></script>
   <script src="js/mainController.js"></script>
