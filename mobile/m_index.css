@@ -91,7 +91,7 @@ img, .container {
 
 .banner-container {
     display: flex;
-    background: url("/assets/banner.jpg");
+    background: url("/assets/banner.jpg"); 
     background-size: cover;
     height: 100%;
     border: 1px solid #000000;
