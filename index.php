@@ -9,7 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 </head>
 <body>
-  <?php //include 'conn/conn.php'; ?>
+  <?php include 'conn/conn.php'; ?>
   <div class="wrapper">
     <main></main>
     <navigation></navigation>

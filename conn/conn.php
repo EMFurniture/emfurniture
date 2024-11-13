@@ -1,6 +1,6 @@
 <?php
 // Database credentials
-$servername = "emfurniture.shop"; // Replace with your Hostinger hostname
+$servername = " ns1.dns-parking.com"; // Replace with your Hostinger hostname
 $username = "u598048325_root";
 $password = "2yJ@kqOwC#";
 $dbname = "u598048325_em_furniture";
