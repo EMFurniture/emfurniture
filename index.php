@@ -15,7 +15,7 @@
                 <div class="logo">
                     <img src="/assets/logo.svg" width="240px">
                 </div>
-                <div class="login" ng-controller="mainController">
+                <!-- <div class="login" ng-controller="mainController">
                     <div ng-show="!isLoggedIn" class="login-form">
                         <form>
                             <div class="form-group">
@@ -31,6 +31,30 @@
                         </form>
 
                     </div>
+                </div> -->
+                <div class="loggedInNav">
+                    <ul>
+                        <li>
+                            <img src="/assets/shop.svg" alt="">
+                            <a href="shop.php">Shop</a>
+                        </li>
+                        <li>
+                            <img src="/assets/wishlist.svg" alt="">
+                            <a href="wishlist.php">Wishlist</a>
+                        </li>
+                        <li>
+                            <img src="/assets/cart.svg" alt="">
+                            <a href="cart.php">Cart</a>
+                        </li>
+                        <li>
+                            <img src="/assets/user.svg" alt="">
+                            <a href="account.php">Account</a>
+                        </li>
+                        <li>
+                            <img src="/assets/logout.svg" alt="">
+                            <a href="#">Logout</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 

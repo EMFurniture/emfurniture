@@ -15,7 +15,7 @@
                 <div class="logo">
                     <img src="/assets/logo.svg" width="240px">
                 </div>
-                <div class="login" ng-controller="mainController">
+                <!-- <div class="login" ng-controller="mainController">
                     <div ng-show="!isLoggedIn" class="login-form">
                         <form>
                             <div class="form-group">
@@ -31,6 +31,30 @@
                         </form>
 
                     </div>
+                </div> -->
+                <div class="loggedInNav">
+                    <ul>
+                        <li>
+                            <img src="/assets/shop.svg" alt="">
+                            <a href="shop.php">Shop</a>
+                        </li>
+                        <li>
+                            <img src="/assets/wishlist.svg" alt="">
+                            <a href="wishlist.php">Wishlist</a>
+                        </li>
+                        <li>
+                            <img src="/assets/cart.svg" alt="">
+                            <a href="cart.php">Cart</a>
+                        </li>
+                        <li>
+                            <img src="/assets/user.svg" alt="">
+                            <a href="account.php">Account</a>
+                        </li>
+                        <li>
+                            <img src="/assets/logout.svg" alt="">
+                            <a href="#">Logout</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -47,31 +71,10 @@
             </div>
             
             <div class="store-container">
+                <h3>My Wishlist</h3>
                 <div class="product-list-container">
                     <div class="product-container">
-                        <img src="/images/square/1c.jpg" alt="">
-                        <span>Sala Set</span>
-                        <div class="pl-desc">
-                            <div class="pl-price">
-                                <img src="/assets/peso.svg" alt="">
-                                <span>₱999</span>
-                            </div>
-                            <img src="assets/wish.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="product-container">
                         <img src="/images/square/2a.jpg" alt="">
-                        <span>Sala Set</span>
-                        <div class="pl-desc">
-                            <div class="pl-price">
-                                <img src="/assets/peso.svg" alt="">
-                                <span>₱999</span>
-                            </div>
-                            <img src="assets/wish.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="product-container">
-                        <img src="/images/square/3c.jpg" alt="">
                         <span>Sala Set</span>
                         <div class="pl-desc">
                             <div class="pl-price">
@@ -105,7 +108,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="footer-container">
             <div class="footer-wrapper">

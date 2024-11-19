@@ -214,6 +214,11 @@ input {
     color: #FFFFFF;
     border-radius: 10px;
     border: 1px solid #FFF;
+    cursor: pointer;
+}
+
+.customize-btn.shop {
+    padding: 20px;
 }
 
 /* Footer CSS */
@@ -331,23 +336,33 @@ input {
     gap: 20px;
 }
 
-.store-container form > input {
-    width: 100%;
-    height: 40px !important;
-    width: 100% !important;
-    border-radius: 20px !important;
+.store-container form > div {
+    background: url(/assets/search.png) no-repeat;
+    background-size: 25px;
+    background-position: center right;
     background-color: #AEDAD0 !important;
+    border-radius: 20px !important;
+    background-position-x: 98.5%;
+}
+
+.store-container form div > input {
+    height: 40px !important;
+    width: 96% !important;
+    border-radius: 20px !important;
+    background: transparent;
     border: 0 !important;
     font-weight: bold !important;
     color: #000000 !important; 
     padding: .375rem .75rem;
+    border: none;
+    outline: none;
 }
 
 .product-list-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 8px;
 }
 
 .product-container {
@@ -367,4 +382,89 @@ input {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.loggedInNav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.loggedInNav > ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.loggedInNav ul > li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-container > button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quantity-container > input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+.total-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: #274E45;
+}
+
+.purchase-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.purchase-btn {
+    display: flex;
+    background-color: #AEDAD0;
+    color: #000000;
+    height: 20px;
+    border: 0;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.store-container-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-container:hover {
+    background: #000;
+    color: #FFF;
 }

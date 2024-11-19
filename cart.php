@@ -15,7 +15,7 @@
                 <div class="logo">
                     <img src="/assets/logo.svg" width="240px">
                 </div>
-                <!-- <div class="login" ng-controller="mainController">
+                <div class="login" ng-controller="mainController">
                     <div ng-show="!isLoggedIn" class="login-form">
                         <form>
                             <div class="form-group">
@@ -31,8 +31,8 @@
                         </form>
 
                     </div>
-                </div> -->
-                <div class="loggedInNav">
+                </div>
+                <!-- <div class="loggedInNav">
                     <ul>
                         <li>
                             <img src="/assets/shop.svg" alt="">
@@ -55,7 +55,7 @@
                             <a href="#">Logout</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
 
             <div class="navigation" ng-controller="NavigationController">
@@ -70,36 +70,62 @@
                 <hr>
             </div>
 
-            <div class="about-us-container">
-                <h4>About Us</h4>
-                
-                <p>Welcome to EM Furniture! At EM Furniture, Our mission is to provide high-quality, stylish, and
-                    functional furniture that transforms your house into a home.</p>
-
-                <h5>Our Story</h5>
-
-                <p>Founded in September 9, 2021, EM Furniture Shop started with a simple vision, to make beautiful and
-                    durable furniture accessible to everyone. From our humble beginnings as a small family-run shop, we
-                    have grown into a beloved destination for furniture enthusiasts and home decorators alike.</p>
-
-                <h5>Our Commitment</h5>
-
-                <p>We are dedicated to offering a diverse range of furniture that caters to various tastes and needs.
-                    Whether you are looking for modern, contemporary, classic, or rustic styles, you will find something
-                    to suit your aesthetic at our store. Each piece in our collection is carefully selected for its
-                    quality, craftsmanship, and design.</p>
-
-                <h5>Our Values</h5>
-
-                <ul>
-                    <li><b>Quality:</b> We prioritize craftsmanship and durability in every piece we offer.</li>
-                    <li><b>Customer Satisfaction:</b> Your happiness is our top priority. We are here to assist you at
-                        every
-                        step, from selection to delivery.</li>
-                    <li><b>Sustainability:</b> We are committed to environmentally friendly practices, sourcing
-                        materials
-                        responsibly and offering eco-friendly products.</li>
-                </ul>
+            <div class="store-container">
+                <h3>Shopping Cart</h3>
+                <div class="product-list-container">
+                    <div class="product-container">
+                        <img src="/images/square/2a.jpg" alt="">
+                        <span>Sala Set</span>
+                        <div class="pl-desc">
+                            <div class="pl-price">
+                                <img src="/assets/peso.svg" alt="">
+                                <span>₱999</span>
+                            </div>
+                            <div class="quantity-container">
+                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                <input type="number" value="1" min="0">
+                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <img src="/images/square/4b.jpg" alt="">
+                        <span>Sala Set</span>
+                        <div class="pl-desc">
+                            <div class="pl-price">
+                                <img src="/assets/peso.svg" alt="">
+                                <span>₱999</span>
+                            </div>
+                            <div class="quantity-container">
+                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                <input type="number" value="1" min="0">
+                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container">
+                        <img src="/images/square/5a.jpg" alt="">
+                        <span>Sala Set</span>
+                        <div class="pl-desc">
+                            <div class="pl-price">
+                                <img src="/assets/peso.svg" alt="">
+                                <span>₱999</span>
+                            </div>
+                            <div class="quantity-container">
+                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                <input type="number" value="1" min="0">
+                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total-container">
+                    <h4>Total Amount:</h4>
+                    <p>₱2,997</p>
+                </div>
+                <div class="purchase-btn-container">
+                    <div class="purchase-btn">Proceed to Checkout</div>
+                </div>
             </div>
 
         </div>
