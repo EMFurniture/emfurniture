@@ -70,64 +70,82 @@
                 <hr>
             </div>
 
-            <div class="store-container">
-                <h3>Shopping Cart</h3>
-                <div class="product-list-container">
-                    <div class="product-container">
-                        <img src="/images/square/2a.jpg" alt="">
-                        <span>Sala Set</span>
-                        <div class="pl-desc">
-                            <div class="pl-price">
-                                <img src="/assets/peso.svg" alt="">
-                                <span>₱999</span>
-                            </div>
-                            <div class="quantity-container">
-                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                                <input type="number" value="1" min="0">
-                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+            <div class="tracking-container">
+                <div class="left-container">
+                    <h3>Your order is on the way!</h3>
+                    <h6>Shipping Address</h6>
+                    <div class="address-container">
+                        <div class="recipient-container">
+                            <img src="/assets/cout-address.svg" alt="">
+                            <div class="recipient-info">
+                                <h6>Example Name Here</h6>
+                                <span><b>Address:</b> 123 Rizal Street, Barangay San Roque, Naga City, Camarines Sur,
+                                    4400, Philippines</span>
+                                <span><b>Contact Number:</b> 09623672459</span>
                             </div>
                         </div>
                     </div>
-                    <div class="product-container">
-                        <img src="/images/square/4b.jpg" alt="">
-                        <span>Sala Set</span>
-                        <div class="pl-desc">
-                            <div class="pl-price">
-                                <img src="/assets/peso.svg" alt="">
-                                <span>₱999</span>
+                    <hr>
+                    <div class="cout-default">
+                        <span>Estimated Delivery:</span>
+                        <span>November 30, 2024</span>
+                    </div>
+                    <div class="cout-default">
+                        <span>Total Amount:</span>
+                        <span>₱2,997</span>
+                    </div>
+                    <div class="progress-meter-container">
+                        <div class="pm-container">
+                            <div class="pm-div-label">
+                                <img src="/assets/preparation.svg" alt="">
+                                <span>Preparation</span>
                             </div>
-                            <div class="quantity-container">
-                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                                <input type="number" value="1" min="0">
-                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            <div class="pm-div-sign">
+                                <img src="/assets/checkmark.svg" alt="">
                             </div>
                         </div>
-                    </div>
-                    <div class="product-container">
-                        <img src="/images/square/5a.jpg" alt="">
-                        <span>Sala Set</span>
-                        <div class="pl-desc">
-                            <div class="pl-price">
-                                <img src="/assets/peso.svg" alt="">
-                                <span>₱999</span>
+                        <div class="pm-container">
+                            <div class="pm-div-label">
+                                <img src="/assets/transit.svg" alt="">
+                                <span>In-transit</span>
                             </div>
-                            <div class="quantity-container">
-                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                                <input type="number" value="1" min="0">
-                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            <div class="pm-div-sign">
+                                <img src="/assets/checkmark.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="pm-container">
+                            <div class="pm-div-label">
+                                <img src="/assets/sorting.svg" alt="">
+                                <span>Sorting</span>
+                            </div>
+                            <div class="pm-div-sign">
+                                <img src="/assets/checkmark.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="pm-container standby">
+                            <div class="pm-div-label">
+                                <img src="/assets/local-delivery.svg" alt="">
+                                <span>Local Delivery</span>
+                            </div>
+                            <div class="pm-div-sign">
+                                <img src="/assets/standby.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="pm-container standby">
+                            <div class="pm-div-label">
+                                <img src="/assets/received.svg" alt="">
+                                <span>Received</span>
+                            </div>
+                            <div class="pm-div-sign">
+                                <img src="/assets/standby.svg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="total-container">
-                    <h4>Total Amount:</h4>
-                    <p>₱2,997</p>
-                </div>
-                <div class="purchase-btn-container">
-                    <div class="purchase-btn"><a href="checkout.php">Proceed to Checkout</a></div>
+                <div class="right-container">
+                    <img src="/assets/tracking-img.jpg" alt="">
                 </div>
             </div>
-
         </div>
         <div class="footer-container">
             <div class="footer-wrapper">
@@ -171,8 +189,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <footer></footer>
 </body>
 
 </html>

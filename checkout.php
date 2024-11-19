@@ -70,40 +70,27 @@
                 <hr>
             </div>
 
-            <div class="store-container">
-                <h3>Shopping Cart</h3>
-                <div class="product-list-container">
-                    <div class="product-container">
-                        <img src="/images/square/2a.jpg" alt="">
-                        <span>Sala Set</span>
-                        <div class="pl-desc">
-                            <div class="pl-price">
-                                <img src="/assets/peso.svg" alt="">
-                                <span>₱999</span>
-                            </div>
-                            <div class="quantity-container">
-                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                                <input type="number" value="1" min="0">
-                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-                            </div>
+            <div class="checkout-container">
+                <h3>Check out your order!</h3>
+                <h6>Shipping Address</h6>
+                <div class="address-container">
+                    <div class="recipient-container">
+                        <img src="/assets/cout-address.svg" alt="">
+                        <div class="recipient-info">
+                            <h6>Example Name Here</h6>
+                            <span><b>Address:</b> 123 Rizal Street, Barangay San Roque, Naga City, Camarines Sur,
+                                4400, Philippines</span>
+                            <span><b>Contact Number:</b> 09623672459</span>
                         </div>
                     </div>
-                    <div class="product-container">
-                        <img src="/images/square/4b.jpg" alt="">
-                        <span>Sala Set</span>
-                        <div class="pl-desc">
-                            <div class="pl-price">
-                                <img src="/assets/peso.svg" alt="">
-                                <span>₱999</span>
-                            </div>
-                            <div class="quantity-container">
-                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
-                                <input type="number" value="1" min="0">
-                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
-                            </div>
-                        </div>
+                    <div class="add-address-container">
+                        <img src="/assets/add.svg" alt="">
+                        <span>Add Address</span>
                     </div>
-                    <div class="product-container">
+                </div>
+                <hr>
+                <div class="product-checkout-container">
+                    <div class="cout-product-container">
                         <img src="/images/square/5a.jpg" alt="">
                         <span>Sala Set</span>
                         <div class="pl-desc">
@@ -118,13 +105,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="cout-product-container">
+                        <img src="/images/square/1c.jpg" alt="">
+                        <span>Sala Set</span>
+                        <div class="pl-desc">
+                            <div class="pl-price">
+                                <img src="/assets/peso.svg" alt="">
+                                <span>₱999</span>
+                            </div>
+                            <div class="quantity-container">
+                                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                <input type="number" value="1" min="0">
+                                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="total-container">
-                    <h4>Total Amount:</h4>
-                    <p>₱2,997</p>
+                <hr>
+                <div class="cout-default">
+                    <span>Estimated Delivery:</span>
+                    <span>November 30, 2024</span>
                 </div>
-                <div class="purchase-btn-container">
-                    <div class="purchase-btn"><a href="checkout.php">Proceed to Checkout</a></div>
+                <div class="cout-default">
+                    <span>Total Amount:</span>
+                    <span>₱2,997</span>
+                </div>
+                <div class="cout-default payment">
+                    <span>Payment Method:</span>
+                    <div class="radio-btn-container">
+                        <div>
+                            <input type="radio" id="cash">
+                            <label for="cash">Cash</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="gcash">
+                            <label for="gcash">Gcash</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-btn-container">
+                    <div class="checkout-btn"><a href="tracking.php">Place Order</a></div>
                 </div>
             </div>
 
