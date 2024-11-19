@@ -110,7 +110,7 @@
                         <span>Sala Chair</span>
                     </div>
                     <div class="thc-price">
-                        <span>₱1,499</span>
+                        <span>₱499</span>
                     </div>
                     <div class="thc-date">
                         <span>November 21, 2024</span>
