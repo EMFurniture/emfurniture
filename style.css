@@ -1,3 +1,9 @@
+body {
+    background-color: #E1F4D5;
+    height: 100%;
+    width: 100%;
+}
+
 .wrapper {
     background-color: #E1F4D5 !important;
     display: flex;
@@ -7,6 +13,10 @@
     padding: 10px 0;
     font-weight: bold !important;
     flex-direction: column;
+}
+
+a {
+    color: inherit !important;
 }
 
 .sub-wrapper {
@@ -106,11 +116,22 @@ input {
     cursor: pointer;
 }
 
-.home-container {
+.home-container,
+.about-us-container,
+.gallery-container,
+.contact-us-container,
+.store-container {
     display: flex;
     flex-direction: column;
     gap: 50px;
     margin-bottom: 50px;
+}
+
+.about-us-container,
+.contact-us-container,
+.gallery-container {
+    gap: 10px !important;
+    font-size: 15px;
 }
 
 .product-quality-container {
@@ -231,7 +252,7 @@ input {
 
 .footer-wrapper {
     width: 1200px;
-    padding: 40px;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -273,4 +294,77 @@ input {
 .copyright > hr {
     border-top: 1px solid #FFFFFF !important;
     width: 100%;
+}
+
+.contact-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cd-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cd-container > p {
+    margin: 0 !important;
+}
+
+.gallery-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-div > img {
+    width: calc(99%/2);
+}
+
+.store-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.store-container form > input {
+    width: 100%;
+    height: 40px !important;
+    width: 100% !important;
+    border-radius: 20px !important;
+    background-color: #AEDAD0 !important;
+    border: 0 !important;
+    font-weight: bold !important;
+    color: #000000 !important; 
+    padding: .375rem .75rem;
+}
+
+.product-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: calc(98% / 4);
+    margin-bottom: 20px;
+}
+
+.product-container > img {
+    width: 100%;
+}
+
+.pl-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
