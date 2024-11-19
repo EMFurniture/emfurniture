@@ -107,7 +107,7 @@
                             personalize your furniture and make it uniquely yours.
                         </span>
                         <div class="customize-btn">
-                            <span>Click here to Customize your order</span>
+                            <span><a href="customization.php">Click here to Customize your order</a></span>
                         </div>
                     </div>
                 </div>

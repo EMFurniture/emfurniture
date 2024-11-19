@@ -457,6 +457,41 @@ input {
     align-items: center;
 }
 
+.purchase-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.customization-btns-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.attach-btn-container,
+.msg-btn-container {
+    width: 50%;
+}
+
+.msg-btn,
+.attach-btn {
+    display: flex;
+    background-color: #AEDAD0;
+    color: #000000;
+    height: 20px;
+    border: 0;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+}
+
 .store-container-nav {
     display: flex;
     flex-direction: row;
@@ -467,4 +502,46 @@ input {
 .product-container:hover {
     background: #000;
     color: #FFF;
+}
+
+.cc-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cc-head > img {
+    width: 62px;
+}
+
+.customization-form-container > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.customization-form-container form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.customization-form-container form div > input {
+    border: none;
+    padding: 0 0 0 10px;
+    outline: none;
+    color: #000;
+    font-weight: bold;
+    height: 35px;
+}
+
+.customization-form-container form div > textarea {
+    outline: none;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    height: 300px;
 }
