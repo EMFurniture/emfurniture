@@ -439,14 +439,16 @@ input {
 }
 
 .purchase-btn-container,
-.checkout-btn-container {
+.checkout-btn-container,
+.dp-btn-container {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
-.checkout-btn-container {
+.checkout-btn-container,
+.dp-btn-container {
     width: 100%;
 }
 
@@ -455,7 +457,9 @@ input {
 }
 
 .purchase-btn,
-.checkout-btn {
+.checkout-btn,
+.dp-btn,
+.update-acc-btn {
     display: flex;
     background-color: #AEDAD0;
     color: #000000;
@@ -676,4 +680,98 @@ input {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.ac-left-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 20px;
+}
+
+.ac-left-container > img {
+    border-radius: 50%;
+}
+
+.dp-btn {
+    width: 100%;
+}
+
+.account-container {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.ac-right-container {
+    width: 100%;
+}
+
+.acrc-sub-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ac-right-container > h3 {
+    text-align: center;
+}
+
+.acrc-sub-container div > h5 {
+    margin: 0;
+}
+
+.update-acc-btn {
+    margin-top: 30px;
+}
+
+.acrc-sub-container form div > input {
+    height: 40px !important;
+    width: 100% !important;
+    border-radius: 0px !important;
+    background: #AEDAD0 !important;
+    border: 0 !important;
+    font-weight: bold !important;
+    color: #000000 !important;
+    padding: .375rem .75rem;
+    border: none;
+    outline: none;
+}
+
+.acrc-sub-container form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.acrc-sub-container > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.margin-top-10 {
+    margin-top: 10px;
+}
+
+.transaction-history-container {
+    background: #94cbff;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.thc-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.thc-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
 }
