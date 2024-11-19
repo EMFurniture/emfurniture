@@ -99,7 +99,7 @@
                         <span>November 19, 2024</span>
                     </div>
                     <div class="thc-status">
-                        <span>Pending</span>
+                        <span><a href="tracking.php">Pending</a></span>
                     </div>
                     <div class="thc-reference">
                         <span>4562434652344</span>
